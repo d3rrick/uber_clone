@@ -75,6 +75,9 @@
          <div id="map">
 
          </div>
+         <div id="gmap" hidden>
+
+        </div>
         </div>
       </div>
     </div>
@@ -86,9 +89,13 @@
     <script src="{% static 'src/leaflet/leaflet-src.js' %}"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
     <script src="{% static 'src/plugins/AnimatedMarker.js' %}"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&amp;libraries=places&key=AIzaSyBLkJ1gRz6kZflxbqI74k3IEwETD943EtQ"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/geocomplete/1.4/jquery.geocomplete.min.js"></script>
     
+    <script src="{% static 'src/plugins/lrm-google/lrm-google.js' %}"></script>
+    <script src="{% static 'src/plugins/snake.js' %}"></script>
+    <script src="{% static 'src/plugins/turf.min.js' %}"></script>
+    <script src="{% static 'src/plugins/leaflet.ajax.min.js' %}"></script>
     <script src="{% static 'js/portal.js' %}"></script>
     <script>
             $("#start").geocomplete(); 
@@ -100,7 +107,7 @@
 </html>
 
 
-
+{% comment %} 
 function GetLatlong(){
         var geocoder = new google.maps.Geocoder();
         var address = $('#geolat').val();
@@ -114,4 +121,4 @@ function GetLatlong(){
 
         });
         
-    }
+    } {% endcomment %}

@@ -58,7 +58,7 @@ $(document).ready(function(){
     var icnAvailable ="/static/img/not.svg"
     var myIcon = L.icon({
         iconUrl: icn,
-        iconSize:[40, 60],
+        yiconSize:[40, 60],
         iconAnchor:[20, 60],
         popupAnchor: [0, -53]
         });
@@ -148,8 +148,6 @@ function GetLatlong(address){
     // var line = L.polyline([[-1.300561, 36.784549],[-1.304561,  36.484549],[-1.305561,  36.584549]]),
     // animatedMarker = L.animatedMarker(line.getLatLngs());
     // mymap.addLayer(animatedMarker);
-
-
 
 
     // var marker = L.marker([-1.300561, 36.784549]).bindPopup("jdjjdjd").addTo(mymap)
